@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/books/${id}`)
+      .get(`https://mernscorebackend.onrender.com/api/books/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(`http://localhost:3001/api/books/${id}`, data)
+      .put(`https://mernscorebackend.onrender.com/api/books/${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })

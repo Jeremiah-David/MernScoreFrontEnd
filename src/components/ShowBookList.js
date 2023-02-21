@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/books")
+      .get("https://mernscorebackend.onrender.com/api/books")
       .then((res) => {
         console.log(res.data, "res.data");
         setBooks(res.data);

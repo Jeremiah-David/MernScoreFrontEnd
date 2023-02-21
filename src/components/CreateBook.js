@@ -24,7 +24,7 @@ const CreateBook = (props) => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/api/books", book)
+      .post("https://mernscorebackend.onrender.com/api/books", book)
       .then((res) => {
         setBook({
           title: "",
